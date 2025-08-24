@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import assets from "../assets/assets";
 import ThemeToggleBtn from "./ThemeToggleBtn";
+import { motion } from "motion/react";
 
 const NavBar = ({ theme, setTheme }) => {
   const [sideBarOpen, setSideBarOpen] = useState(false);
@@ -62,7 +63,7 @@ const NavBar = ({ theme, setTheme }) => {
           onClick={() => setSideBarOpen(true)}
         />
         <a
-          href="#Contact-Us"
+          href="#contact-us"
           className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all"
         >
           Connect <img src={assets.arrow_icon} width={14} alt="" />
